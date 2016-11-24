@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest4"
+    android:dividerPadding="3dp"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    android:padding="20dp"
+    android:stretchColumns="*">
+    
+<TableLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbg2"
+    android:dividerPadding="3dp"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    android:padding="20dp"
+    android:stretchColumns="*"
+    android:weightSum="4" >
+    
+     <TableRow style="?android:attr/textViewStyle"
+          android:layout_height="0dp"
+          android:layout_width="wrap_content"
+          android:layout_weight="2"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:background="#00FFFFFF"
+          android:gravity="center_horizontal">
+          
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:fontFamily="primer print bold"
+              android:gravity="center_horizontal"
+              android:lines="6"
+              android:text="@string/restaurant"
+              android:textColor="#FFFFFF"
+              android:textSize="25sp"
+              android:visibility="visible" />
+          
+</TableRow>
+    
+   
+     <TableRow style="?android:attr/buttonBarStyle"
+          android:layout_height="0dp"
+          android:layout_width="match_parent"
+          android:layout_weight="2"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          
+          android:gravity="center_horizontal">
+          
+          	<TextView
+          	    android:id="@+id/Welcome"
+          	    android:layout_width="100dp"
+          	    android:layout_height="match_parent"
+          	    android:fontFamily="primer print bold"
+          	    android:gravity="center_horizontal"
+          	    android:lines="12"
+          	    android:text="@string/welcomemsg"
+          	    android:textColor="#FFFFFF"
+          	    android:textSize="18sp"
+          	    
+          	    android:visibility="visible" />
+          	
+     </TableRow>
+	        
+	<TableRow
+	    style="?android:attr/buttonBarStyle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_weight="1"
+	    android:gravity="center_horizontal" >
+    
+	    	 <Button style="?android:attr/buttonBarButtonStyle"
+		        android:id="@+id/startsurvey"
+		        android:layout_width="80dp"		        
+		        android:layout_height="40dp"
+		        android:text="@string/startsurvey"
+		        android:fontFamily="primer print bold"
+		        android:contentDescription="@string/startsurvey"
+		        
+		        android:textAllCaps="false"
+		        android:onClick="launchSurveyPage2"
+		        android:background="@drawable/woodbutton"
+		        android:textColor="#FFFFFF"
+		        android:layout_margin="3dp"/>
+	    	
+          	
+          	</TableRow>
+	        
+             
+         
+          
+          
+
+
+                
+            
+  </TableLayout>
+ 
+
+</RelativeLayout>

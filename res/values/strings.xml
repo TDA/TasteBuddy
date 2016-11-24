@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TasteBuddy</string>
+    <string name="restaurant">The RainForest</string>
+    <string name="action_settings">Settings</string>
+    <string name="surveypage">Survey Page</string>
+    <string name="loginheading">Login</string>
+    <string name="usernamelabel">Username</string>
+    <string name="passwordlabel">Password</string>
+    <string name="usernamedesc">Enter the Username</string>
+    <string name="passworddesc">Enter the Password</string>
+    <string name="loginbutton">Login</string>
+    <string name="loginbuttondesc">Click to login</string>
+    <string name="welcomemsg">Thank you for dining with us.\n We believe in delivering excellence every time. Kindly share your dining experience with us</string>
+	<string name="startsurvey">Start Survey</string>
+	<string name="ques1">Kindly rate your experience with us</string>
+	<string name="ques2">How likely are you to recommend us to your friends and family\?</string>
+	<string name="next">Next</string>
+	<string name="ques3">How would you rate us for the following \?\nQuality of Food</string>
+	<string name="ques4">Cleanliness and Ambience</string>
+	<string name="ques5">Speed of service</string>
+	<string name="ques6">Friendliness and Professionalism</string>
+	<string name="name">Name</string>
+	<string name="namehint">Enter your Name</string>
+	<string name="mail">E-Mail</string>
+	<string name="endsurvey">End Survey</string>
+	<string name="thanks">Thank you for your time and we hope to welcome you back to The RainForest in the future.\nHave a nice day.</string>
+	<string name="mailhint">Enter your E-Mail id</string>
+	<string name="mobile">Mobile</string>
+	<string name="mobilehint">Enter your Mobile number</string>
+	<string name="submit">Submit</string>
+	<string name="thanksheading">Thank You</string>
+	<string name="one">1</string>
+	<string name="two">2</string>
+	
+</resources>
