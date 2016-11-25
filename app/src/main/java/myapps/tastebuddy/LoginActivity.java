@@ -9,6 +9,7 @@ import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.interceptors.ParseLogInterceptor;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,15 +29,24 @@ public class LoginActivity extends Activity {
 	EditText uname,pswd;
 
 	Bundle posts;
-	
+	ParseObject s;
 	
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
-		
-		
-		
-				
+		System.out.println("Login Activity");
+		Parse.initialize(new Parse.Configuration.Builder(getBaseContext())
+				.applicationId("SAI_TEST")
+				.clientKey("")
+				.server("http://10.0.2.2:1337/parse/")
+				.build()
+		);
+		ParseObject survey = new ParseObject("Survey");
+		survey.put("name", "spc");
+		survey.put("mail", "s@s");
+		survey.put("mobile", "35453");
+		survey.saveInBackground();
+		System.out.println(survey);
 	}
 	
 	public void login(View view){
@@ -56,8 +66,8 @@ public class LoginActivity extends Activity {
 		if(username.equals("m")&&password.equals("m")){
 			
 			
-			//Toast.makeText(getApplicationContext(), "Manager Login", Toast.LENGTH_SHORT).show();
-			ParseQuery<ParseObject> query = ParseQuery.getQuery("Survey");
+			Toast.makeText(getApplicationContext(), "Manager Login", Toast.LENGTH_SHORT).show();
+			ParseQuery<ParseObject> query = ParseQuery.getQuery("GameScore");
 			
 		    query.findInBackground(new FindCallback<ParseObject>(){
 
@@ -83,7 +93,7 @@ public class LoginActivity extends Activity {
 		    
 		}
 		else{
-			if(username.equals("employee1")&&password.equals("employee1")){
+			if(username.equals("e")&&password.equals("e")){
 				setContentView(R.layout.surveypage1);
 			}
 			else{
